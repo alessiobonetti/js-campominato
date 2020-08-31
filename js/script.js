@@ -55,12 +55,15 @@ var explodedBomb = false
         arrayUserNumbers.push(userNumber);
       }
     }
+    else {
+      alert("Il numero è già stato inserito");
+    }
   }
   console.log(arrayUserNumbers);
 
 //Risulktato
 if (explodedBomb==true){
-  alert("Hai perso, hai vinto" + arrayUserNumbers.length + "volte in fila." );
+  alert("Hai perso, hai vinto" + "" + arrayUserNumbers.length+ "" + "volte in fila." );
 }
 else {
   alert("Congratulazioni hai finito il gioco");
